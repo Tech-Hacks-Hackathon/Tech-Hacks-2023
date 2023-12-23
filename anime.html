@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/anime.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Buddy Library</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="dot1">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+            <path fill="#000000">
+                <animate attributename="d"
+                dur="10000ms"
+                repeatCount="indefinite"
+                values="M424.5,335Q420,420,335,440Q250,460,162.5,442.5Q75,425,50.5,337.5Q26,250,58,170Q90,90,170,52Q250,14,328.5,53.5Q407,93,418,171.5Q429,250,424.5,335Z;
+                M453,333Q416,416,333,433.5Q250,451,185.5,415Q121,379,94.5,314.5Q68,250,89,180Q110,110,180,62Q250,14,335,47Q420,80,455,165Q490,250,453,333Z;
+                M441.5,334Q418,418,334,438.5Q250,459,187,417.5Q124,376,64,313Q4,250,58.5,181.5Q113,113,181.5,76Q250,39,324.5,70Q399,101,432,175.5Q465,250,441.5,334Z;
+                M433,315.5Q381,381,315.5,405.5Q250,430,182,408Q114,386,82.5,318Q51,250,70.5,170Q90,90,170,78.5Q250,67,336.5,72Q423,77,454,163.5Q485,250,433,315.5Z;
+                M424.5,335Q420,420,335,440Q250,460,162.5,442.5Q75,425,50.5,337.5Q26,250,58,170Q90,90,170,52Q250,14,328.5,53.5Q407,93,418,171.5Q429,250,424.5,335Z;"
+                ></animate>
+            </path>
+          </svg>
+        </div>
+    </div>
+    <script src="anime.min.js"></script>
+    <script>
+        function creatediv(){
+            const newdiv=document.createElement("div");
+            newdiv.className="newbox";
+
+            var maxX=window.innerWidth-50;
+            var maxY=window.innerHeight-50;
+
+            var randomX=Math.floor(Math.random()*maxX);
+            var randomY=Math.floor(Math.random()*maxY);
+
+            newdiv.style.left=randomX+"px";
+            newdiv.style.top=randomY+"px";
+
+            document.body.appendChild(newdiv);
+        }
+        for(let i=0;i<=500;i++){
+            creatediv();
+        }
+        function createandiv(){
+
+            const anodiv=document.createElement("div");
+            anodiv.className="anodiv";
+
+            var maxX=window.innerWidth-50;
+            var maxY=window.innerHeight-50;
+
+            var randomX=Math.floor(Math.random()*maxX);
+            var randomY=Math.floor(Math.random()*maxY);
+
+            anodiv.style.left=randomX+"px";
+            anodiv.style.top=randomY+"px";
+
+            document.body.appendChild(anodiv);
+
+        }
+        for(let j=0;j<=2000;j++){
+            createandiv();
+        }
+//         anime({
+//             targets: '#dot1',
+//             translateZ: {
+//                     value: 250,
+//                     duration: 1000
+//             },
+//             scale: {
+//                 value: 30,
+//                 duration: 3000,
+//                 delay: 1500,
+//                 easing: 'easeInOutQuart'
+//             },
+//   delay: 850
+// });
+
+anime({
+  targets: '#dot1',
+  translateZ: {
+    value: 250,
+    duration: 1000
+  },
+  rotate: {
+    value: 270,
+    duration: 1000,
+    easing: 'easeInOutSine'
+  },
+  scale: {
+    value: 30,
+    duration: 1600,
+    delay: 800,
+    easing: 'easeInOutQuart'
+  },
+  delay: 850 // All properties except 'scale' inherit 250ms delay
+});
+        anime({
+            targets: '.newdiv',
+            translateZ: {
+                    value: 250,
+                    duration: 1000
+            },
+            delay: 850,
+            loop:true
+});
+
+
+anime({
+            targets: 'body',
+            scale: {
+                value: 5,
+                duration: 20000,
+                easing: 'easeInOutQuad',
+                
+            },
+            delay: 10,
+            loop:true
+        });
+    </script>
+</body>
+</html>

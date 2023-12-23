@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, 2%);
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    backdrop-filter: blur(2px);
+    max-width: 100%;
+    
+}
+.matter-box{
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 450px;
+    background-color: #F4F4F8;
+    backdrop-filter: blur(2px);
+    border-radius: 0px 20px 20px 0;
+}
+#image{
+    background-color: #F4F4F8;
+    height: 686px;
+    width: 450px;
+    border-radius: 20px 0px 0px 20px;
+}
+.head-1{
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+#head-1-para{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+#head-1-a{
+    text-decoration: none;
+    color: #236ddb;
+}
+.head-2{
+    text-align: center;
+    line-height: 40px;
+}
+#hello-again{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#down-para{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.head-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+}
+.head-3-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#username{
+    width: 300px;
+    height: 65px;
+    padding-left: 60px;
+    padding-right: 18px;
+    font-size: 21px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#account,#lock{
+    width: 25px;
+    position: absolute;
+    z-index: 2;
+    left: 58px;
+    height: 25px;
+}
+
+#password{
+    width: 300px;
+    height: 65px;
+    padding-left: 60px;
+    padding-right: 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.password-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-password{
+    padding: 10px 0px 40px 0px;
+    display: flex;
+    justify-content: right;
+    margin-right: 45px;
+}
+#forgot{
+    letter-spacing: 0.2px;
+    font-size: 15px;
+}
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#forgot{
+    text-align: right;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.head-4{
+    display: flex;
+    justify-content: space-around;
+}
+
+#signin{
+    cursor: pointer;
+    width: 250px;
+    padding: 15px 0 15px 0;
+    font-size: 22px;
+    border-radius: 8px;
+    border: none;
+    background-color: #236ddb;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.continue-with{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+#continue{
+    position: relative;
+}
+#continue:after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    left: -90px;
+    bottom: 7.6px;
+}
+#with{
+    position: relative;
+}
+#with:after{
+    content:"";
+    position: absolute;
+    width: 255%;
+    background-color: black;
+    height: 2px;
+    right: -85px;
+    bottom: 7.6px;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    padding-top:30px;
+    flex-direction: row;
+    gap: 20px;
+}
+#google{
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+#fb{
+    width: 40px;
+    border-radius: 50%;
+}
+#x{
+    width: 40px;
+    border-radius: 50%;
+}
+
+@media (610px<=width<=900px) {
+    
+    #image{
+        height: 680px;
+        width: 380px;
+        max-width: 100%;
+    }
+    .matter-box{
+        height: 650px;
+        width: 350px;
+        max-width: 90%;
+    }
+    #username,#password{
+        width: 280px;
+        height: 50px;
+        padding-left: 40px;
+        font-size: medium;
+        max-width: 60%;
+    }
+    #account,#lock{
+        width: 20px;
+        position: absolute;
+        z-index: 2;
+        left: 55px;
+        height: 20px;
+    }
+    #forgot{
+        letter-spacing: 0.2px;
+        font-size: 12.5px;
+    }
+    #head-1-para{
+        font-size: 12px;
+    }
+    .submit-button{
+        max-width: 100%;
+    }
+    
+}
+
+
+@media (200px<width<=600px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0%, 1%);
+        padding: 10px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        backdrop-filter: blur(2px);
+        
+    }
+    .matter-box{
+        padding: 20px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        width: 350px;
+        background-color: #F4F4F8;
+        backdrop-filter: blur(2px);
+        border-radius: 0px 0px 0px 0px;
+    }
+    #image{
+        display: none;
+    }
+    .head-1{
+        padding-bottom: 90px;
+        display: flex;
+        justify-content: end;
+        padding-right: 20px;
+    }
+    #head-1-para{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #username,#password{
+        width: 220px;
+        height: 50px;
+        padding-left: 40px;
+        font-size: medium;
+    }
+    #account,#lock{
+        width: 20px;
+        position: absolute;
+        z-index: 2;
+        left: 45px;
+        height: 20px;
+    }
+    #forgot{
+        letter-spacing: 0.2px;
+        font-size: 12.5px;
+    }
+
+}

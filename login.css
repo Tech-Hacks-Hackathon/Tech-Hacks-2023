@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 140px;
+}
+.logo{
+width: 210px;
+height: 210px;
+position: absolute;
+top: -40px;
+}
+section{
+    margin-left: 250px;
+    width: 510px;
+    position: relative;
+}
+.loginbox{
+    border: none;
+    box-shadow: 0.1px 0.1px 5px 0.3px #888888;
+    height: auto;
+    padding: 50px;
+}
+#login{
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+    padding-bottom: 8px;
+    letter-spacing: 0.9px;
+}
+#p-1{
+    font-size: large;
+    color: grey;
+    letter-spacing: 0.8px;
+    font-family: 'Noto Serif', serif;
+}
+.p-1{
+    font-size: 0.9em;
+    font-family: 'Noto Serif', serif;
+    color: rgb(177,33,227);
+    font-weight: 500;
+}
+.login-section{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.label{
+    font-size: large;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 0.8px;
+    padding-bottom: 8px;
+}
+.login-input-box{
+    width: 360px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding-left: 20px;
+    font-size: large;
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 0.8px;
+    
+}
+.passowrd-section{
+    display: flex;
+    gap: 160px;
+}
+.email-div{
+    padding-bottom: 20px;
+}
+#forget-password{
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(177,33,227);
+}
+.check-box{
+    width: 18px;
+    height: 20px;
+}
+.remember{
+    display: flex;
+    gap: 12px;
+}
+#rememberme{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: grey;
+    letter-spacing: 0.8px;
+}
+#button{
+text-align: left;
+
+}
+#login-button{
+    padding: 20px;
+    width: 390px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(137,61,255);
+    border: none;
+    font-size: large;
+    letter-spacing: 0.9px;
+    font-weight: 600;
+    cursor: pointer;
+}
+aside{
+    position: absolute;
+    top: 0px;
+    left: 550px;
+}
+video{
+    width: 700px;
+    height: 580px;
+    border: none;
+}
+.headings{
+display: flex;
+gap: 60px;
+
+}
+#student{
+font-size: 20px;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Martel', serif;
+letter-spacing: 1.1px;
+font-weight: bold;
+padding-bottom: 20px;
+position: relative;
+cursor: pointer;
+padding: 6px;
+background-color: rgb(201, 200, 200);
+border-radius: 5px;
+}
+/* #student:after{
+content: "";
+position: absolute;
+background-color:#FABA26;
+height: 3px;
+width: 0;
+left: 0;
+bottom: 13px;
+border-radius: 20%;
+transition: 0.4s;
+}
+#student:hover:after{
+    width: 100%;
+    
+} */
+
+#employee{
+    position: relative;
+font-size: 20px;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Martel', serif;
+letter-spacing: 1.1px;
+font-weight: bold;
+padding-bottom: 20px;
+cursor: pointer;
+}
+/* #employee:after{
+    content: "";
+    position: absolute;
+    background-color: #FABA26;
+    width: 0px;
+    height: 3px;
+    left: 0;
+    bottom: 13px;
+    border-radius: 20%;
+    transition: 0.4s;
+}
+#employee:hover:after{
+    width: 100%;;
+} */
+#back{
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    letter-spacing: 0.6px;
+    word-wrap: break-word;
+    font-weight: 600;
+    position: relative;
+    
+}
+#back-logo{
+    height: 25px;
+    width: 25px;
+
+    
+}
+.bottom{
+    margin-left: 20px;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+#back::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: black;
+    left: 0;
+    bottom: -2px;
+    transition: 0.4s;
+    }
+#back:hover:after{
+    width: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+    body {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    section {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .loginbox {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        padding: 20px;
+    }
+
+    .email-div {
+        max-width: 100%;
+    }
+
+    .headings {
+        flex-direction: column;
+        gap: 8px;
+        max-width: 100%;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+
+    .login-input-box {
+        max-width: 90%;
+    }
+
+    #login-button {
+        max-width: 90%;
+        justify-content: center;
+    }
+
+    #button {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .passowrd-section {
+        gap: 110px;
+    }
+
+    #p-1 {
+        font-size: 15px;
+    }
+
+    #forget-password {
+        font-size: small;
+    }
+
+    #student, #employee {
+        font-size: medium;
+    }
+
+    #login {
+        font-size: 1.5rem;
+    }
+}

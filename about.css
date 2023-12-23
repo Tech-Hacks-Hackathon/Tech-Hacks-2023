@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid grey;
+    
+
+}
+#logo{
+    width: 150px;
+    display: block;
+    margin: 6px 30px 0 0;
+}
+.navbar-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 550px;
+}
+.elements-1{
+    width: 390px;
+}
+.elements-1 a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    line-height: 21px;
+    height: 60px;
+    margin: 0 0 0 12px;
+    letter-spacing: 0.3px;
+    position: relative;
+}
+.navbar-2{    
+    height: auto;
+    width: 250px;
+}
+.navbar-2 a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    line-height: 21px;
+    height: 60px;
+    margin: 0 0 0 7px;
+    letter-spacing: 0.3px;
+    max-width: 100%;
+}
+#author:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    left: 0.1px;
+    bottom: -18px;
+    border-radius: 50px 50px 0 0;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+
+}
+#author:hover:after{
+    transform: scaleX(1);
+}
+#books:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    left: 0.1px;
+    bottom: -18px;
+    border-radius: 50px 50px 0 0;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+
+}
+#books:hover:after{
+    transform: scaleX(1);
+}
+
+
+#signup{
+    background-color: #FFC600;
+    color: white;
+    border-radius: 5px;
+    margin: 0 0 0 10px;
+    padding: 10px;
+}
+#menu{
+    width: 25px;
+    display: none;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.subbox{
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    background-color: #FFC600;
+    padding-bottom: 20px;
+    position: relative;
+}
+.box .subbox a{
+    letter-spacing: 0.4px;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+}
+.signup-head{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.6px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#login-1,#homw-1,#about-1,#author-1,#how-1,#home-1,#books-1{
+    text-align: center;
+}
+#signup-1{
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+#cancel{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    cursor: pointer;
+}
+.cancel-div{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 10px;
+    padding-right: 14px;
+}
+
+#about:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    left: 0.1px;
+    bottom: -18px;
+    border-radius: 50px 50px 0 0;
+    transition: transform 0.3s linear;
+
+}
+#about:hover:after{
+    transform: scale(1);
+}
+#home:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    left: 0.5px;
+    bottom: -18px;
+    border-radius: 50px 50px 0 0;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+
+}
+#home:hover:after{
+    transform: scaleX(1);
+}
+
+#howitworks:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    left: -0.6px;
+    bottom: -18px;
+    border-radius: 50px 50px 0 0;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+
+}
+#howitworks:hover:after{
+    transform: scaleX(1);
+}.matter{
+    max-width: 100%;
+}
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    margin: auto 50px auto 50px;
+    background-color: aliceblue;
+    
+}
+.matter h1{
+    padding: 20px;
+    font-family:Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.matter-1{
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+#head-1{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-decoration: underline;
+}
+footer{
+    max-width: 100%;
+    background-color: #E2DECF;
+    margin: 0px 48px 0 48px;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    padding: 100px 0 100px 0;
+    flex-wrap:wrap;
+}
+.foot a{
+    text-decoration: none;
+    line-height: 23px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 400;
+    color: #404172;
+    font-family: sans-serif;
+}
+.foot a:hover{
+    text-decoration: underline black;
+}
+.foot-1,.foot-2,.foot-3,.languages{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+#twitter,#linkedin{
+    width: 30px;
+}
+#footer-heading{
+    padding-bottom: 8px;
+    font-family: Inter, apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Fira Sans", Roboto, Oxygen, Ubuntu, "Droid Sans", Arial, sans-serif;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe-button{
+    display: flex;
+    gap: 10px;
+}
+#your-email{
+    padding-left: 18px;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid white;
+    background-color: #E2DECF;
+}
+#subscribe{
+padding: 12px;
+border: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+font-weight: 600;
+}
+#subscribe:hover{
+    background-color: black;
+    color: white;
+}
+#footer-para{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 23px;
+    font-family: sans-serif;
+
+}
+
+
+@media (300px<=width<=800px){
+    header{
+        padding: 5px 0 5px 0;
+    }
+    header h5{
+        font-size: small;
+        line-height: 22px;
+    }
+    #menu{
+        display: block;
+        margin-left: 50px;
+    }
+    .elements-1{
+        display: none;
+    }
+    .navbar-2 #contact,#login,#signup{
+        display: none;
+    }
+    nav{
+        max-width: 100%;
+    }
+    .navbar-1{
+        width: 0px;
+    }
+    .navbar-2{
+        width: 0px;
+    }
+    #logo{
+        margin-left: 0px;
+    }
+    .about-us,footer{
+        margin: auto 12px auto 12px;
+    }
+    #head-1{
+        line-height: 40px;
+    }
+    .foot{
+        padding: 20px;
+    }
+    .foot-1,.foot-2,.foot-3,.foot-4,.languages{
+        padding-top: 15px;
+    }
+    .subscribe{
+        padding-top: 20px;
+    }
+    .foot a{
+        font-size: 15px;
+    }
+}
+@media (300px<=width<=650px){
+    footer{
+        margin: auto 10px auto 10px;
+    }
+    .foot{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .foot-1,.foot-2,.foot-3,.foot-4,.languages{
+        padding-top: 15px;
+    }
+    .subscribe{
+        padding-top: 20px;
+    }
+    .foot a{
+        font-size: 15px;
+    }
+}

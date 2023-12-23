@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing Circle</title>
+  <style>
+    .changing-circle {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      border-radius: 50%;
+      transition: all 1s ease-in-out;
+    }
+
+    .changing-circle:hover {
+      border-radius: 0;
+      width: 150px;
+      height: 150px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="changing-circle"></div>
+</div>
+
+</body>
+</html>
