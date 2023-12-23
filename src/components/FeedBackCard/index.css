@@ -1,0 +1,67 @@
+.bg-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  padding: 24px;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 15px;
+  width: 340px;
+  height: 250px;
+  margin: 10px;
+}
+
+.card-container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img1 {
+  height: 40px;
+  width: 40px;
+}
+
+.img-logo {
+  height: 80px;
+  width: 80px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.userName {
+  font-family: "Roboto";
+}
+.name {
+  display: flex;
+  flex-direction: row;
+}
+.FeedbackContainer {
+  background-image: url("https://res.cloudinary.com/da50tzlgo/image/upload/v1703277038/Screenshot_2023-12-23_020006_jwsz7e.png");
+
+  background-size: cover;
+  margin-top: 0px;
+}
+.feedBackHeading {
+  font-family: "Roboto";
+  text-align: center;
+  color: #ffffff;
+  padding-top: 15px;
+}

@@ -1,0 +1,32 @@
+.home {
+  background-color: #f8f8ff;
+  padding-top: 5px;
+}
+.bd {
+  border-top: 2px solid #000000;
+}
+.bg {
+  background-color: #f8f8ff;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.heading2 {
+  width: 600px;
+  padding-left: 30px;
+}
+.homeFirstPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: bounceAnimation 3s infinite;
+  color: #ffffff;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/conference-img.png");
+}
