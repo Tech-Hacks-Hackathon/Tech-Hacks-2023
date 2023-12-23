@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Student Work</title>
+    <link rel="stylesheet" href="7.css"> 
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Upload Student Work</h1>
+            <form id="uploadForm" onsubmit="return redirectToHome()">
+                <div>
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                </div>
+                <br>
+                <div>
+                    <label for="workFile">Upload Work (PDF, DOCX, or ZIP):</label>
+                    <input type="file" id="workFile" name="workFile" accept=".pdf,.docx,.zip" required>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Upload">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function redirectToHome() {
+            window.location.href = "1.html"; 
+            return false; 
+        }
+    </script>
+</body>
+</html>
