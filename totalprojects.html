@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <!-- Add your existing head elements... -->
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Your existing HTML content... -->
+
+    <!-- Chart Section -->
+    <div style="text-align: center; margin-top: 30px;">
+        <h1>Monthly Projects Shared</h1>
+        <canvas id="projectChart" width="800" height="400"></canvas>
+    </div>
+
+    <script>
+        // Sample data for the number of projects shared each month
+        var projectsData = [15, 28, 20, 32, 18, 25, 22, 30, 35, 28, 20, 18];
+
+        var ctx = document.getElementById('projectChart').getContext('2d');
+        var projectChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [
+                    'January', 'February', 'March', 'April', 'May', 'June',
+                    'July', 'August', 'September', 'October', 'November', 'December'
+                ],
+                datasets: [{
+                    label: 'Projects Shared',
+                    data: projectsData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        stepSize: 5 // Adjust the step size according to your data
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
