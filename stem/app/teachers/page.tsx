@@ -7,14 +7,14 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 
-const Principal = () => {
+const Teachers = () => {
   // const { isSignedIn } = useUser();
 
   const [open, setOpen] = useState(false);
 
-  const notes = ["first.pdf", "word.docx", "slide.ppt", "doc.txt"];
+  const courses = ["course1", "course2", "course3", "abcd"];
 
-  const [searchNotes, setSearchNotes] = useState(notes);
+  const [searchCourses, setSearchCourses] = useState(courses);
 
   const handleClick = () => {
     setOpen(!open);
@@ -26,12 +26,12 @@ const Principal = () => {
     console.log(e.target.value);
 
     if (e.target.value === "") {
-      newList = notes;
+      newList = courses;
     } else {
-      newList = notes.filter((name: string) => name.includes(e.target.value));
+      newList = courses.filter((name: string) => name.includes(e.target.value));
     }
 
-    setSearchNotes(newList);
+    setSearchCourses(newList);
   };
 
   return (
@@ -45,15 +45,15 @@ const Principal = () => {
             open ? "max-md:translate-x-0" : "max-md:translate-x-[-100%]"
           }`}
         >
-          <Link href="/courses/notes">Notes</Link>
+          <Link href="/teachers">Courses</Link>
 
-          <Link href="/courses/students">Student List</Link>
+          <Link href="/teachers/projects">Projects</Link>
 
-          <Link href="/courses/chat">Discussions</Link>
+          <Link href="/teachers/approvals">Approvals</Link>
         </nav>
 
         <div className="w-full px-5 pt-5">
-          <h2 className="pb-5 text-4xl font-bold"> Course Name</h2>
+          <h2 className="pb-5 text-4xl font-bold"> Courses</h2>
 
           <div className="flex w-full gap-5 max-md:gap-2">
             <input
@@ -72,19 +72,15 @@ const Principal = () => {
           </div>
 
           <div className="flex w-full flex-col gap-7 py-10">
-            {searchNotes.map((notes: any) => {
+            {searchCourses.map((course: any) => {
               return (
                 <>
                   <Link
-                    href="#"
-                    key={notes}
+                    href="/courses/notes"
+                    key={course}
                     className="rounded-full border border-gray-500 px-7 py-3"
                   >
-                    <h2 className="text-xl">{notes}</h2>
-
-                    <div className="flex-col pt-5">
-                      <h3>Uploaded on: notes.date</h3>
-                    </div>
+                    <h2 className="text-xl">{course}</h2>
                   </Link>
                 </>
               );
@@ -96,4 +92,4 @@ const Principal = () => {
   );
 };
 
-export default Principal;
+export default Teachers;
