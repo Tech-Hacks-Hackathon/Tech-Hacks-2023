@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #444;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .project-card:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Projects</h1>
+
+    <div class="project-container">
+        <div class="project-card" onclick="showProjectDetails('Project A')">
+            <h3>Project A</h3>
+            <p>Description: This is a sample project. Click for details.</p>
+        </div>
+
+        <div class="project-card" onclick="showProjectDetails('Project B')">
+            <h3>Project B</h3>
+            <p>Description: Another sample project. Click for details.</p>
+        </div>
+        <!-- Add more project cards as needed -->
+    </div>
+
+    <div id="projectDetailsModal" style="display: none;">
+        <h2 id="projectTitle"></h2>
+        <p id="projectDescription"></p>
+        <button onclick="closeProjectDetails()">Close</button>
+    </div>
+
+    <script>
+        function showProjectDetails(projectName) {
+            const projectTitle = document.getElementById('projectTitle');
+            const projectDescription = document.getElementById('projectDescription');
+            const projectDetailsModal = document.getElementById('projectDetailsModal');
+
+            // Set project details
+            projectTitle.innerText = projectName;
+            projectDescription.innerText = getProjectDescription(projectName);
+
+            // Show modal
+            projectDetailsModal.style.display = 'block';
+        }
+
+        function closeProjectDetails() {
+            const projectDetailsModal = document.getElementById('projectDetailsModal');
+            projectDetailsModal.style.display = 'none';
+        }
+
+        function getProjectDescription(projectName) {
+            // You can implement logic to retrieve project descriptions dynamically
+            // For simplicity, using static descriptions here
+            if (projectName === 'Project A') {
+                return 'This is a sample project with more details.';
+            } else if (projectName === 'Project B') {
+                return 'Another sample project with additional information.';
+            } else {
+                return 'Description not available.';
+            }
+        }
+    </script>
+
+</body>
+</html>

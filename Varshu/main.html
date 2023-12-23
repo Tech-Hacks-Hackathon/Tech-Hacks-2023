@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .home{
+            transition: transform 0.3s;
+        }
+        .home:hover{
+            transform: scale(1.05);
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            
+        }
+
+        nav {
+            background-color: #555;
+            padding: 0.5em;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h1{
+            height: 3vh;
+            margin-top: 5px;
+            text-align: center;
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+        }
+        h4{
+            color:white;
+            font-size:20px ;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2{
+            color:#cfcfcf ;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em;
+            margin: 0 1em;
+            display: inline-block;
+        }
+
+        .search-container {
+            display: inline-block;
+        }
+
+        .search-box {
+            background-color: #eee;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+        }
+
+        input[type="text"] {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 16px;
+            padding: 8px;
+        }
+        .section{
+            text-align: center;
+        }
+        .hero{
+            background-image: url('background-image.jpg'); /* Add your image URL */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 5em 0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 1em 2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .fa-search {
+            margin-right: 5px;
+        }
+
+        .section {
+            padding: 2em;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2em;
+        }
+
+        .project-card {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 1em;
+            width: 300px;
+            transition: transform 0.3s
+        }
+        .project-card:hover{
+            transform: scale(1.05);
+        }
+        body{
+            background-image:url('https://res.cloudinary.com/dwuxqadrr/image/upload/v1703266290/p7_mrjxj2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .project-card-content {
+            padding: 1em;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: auto;
+        }
+        button{
+			background-color: black; margin-left: 10px; border-radius: 10px; padding: 5px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STEMcollabHub</h1>
+    </header>
+
+    <nav>
+        <div class="home">
+            <a href="home.html"><i class="fa fa-home"></i> Home</a>
+            <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
+            <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#"><i class="fa fa-user"></i> Login <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="login.html">Learner Login</a>
+                <a href="expert-login.html">Expert Login</a>
+            </div>
+        </div>
+    </nav>
+    <div class="section">
+    <section>
+        <h2>WELCOME TO PROJECT HUB</h2>
+        <h4>This is a platform where a student can interact with experts.
+            "Welcome to STEMcollabHub, a transformative online learning and projects sharing hub designed for curious minds and innovative spirits. Embark on a journey of knowledge acquisition, collaborative exploration, and skill mastery. Here, you'll find a dynamic space where learners evolve into creators, and projects come to life through shared expertise. Join our thriving community, where the pursuit of learning meets the excitement of collaboration. Let's learn, create, and innovate together, shaping a future where ideas know no boundaries. Welcome to limitless possibilities!"
+        </h4>
+    </section>
+    </div>
+    <section class="projects">
+        <div class="project-card">
+            <img src="https://res.cloudinary.com/dwuxqadrr/image/upload/v1703265069/p4_d3l0tu.jpg" alt="Data Visualization">
+            <div class="project-card-content">
+                <h3>Data Visualization</h3>
+                <p>Unlock insights and reveal patterns within the data through the art and science of data visualization</p>
+                <a href="#" class="cta-button">click here</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://res.cloudinary.com/dwuxqadrr/image/upload/v1703264826/project3_vrdhxc.webp" alt="Project 2">
+            <div class="project-card-content">
+                <h3>Project Management</h3>
+                <p>Efficiently navigate project complexities, from conception to completion, with our comprehensive project management solutions that empower teams to achieve success.</p>
+                <a href="#" class="cta-button">click here</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://res.cloudinary.com/dwuxqadrr/image/upload/v1703265262/p6_veomtw.jpg" alt="Project 2">
+            <div class="project-card-content">
+                <h3>Real-Time Management</h3>
+                <p>Empower your decisions with the precision of real-time management, where data-driven insights meet agile strategies for unparalleled responsiveness and success.</p>
+                <a href="#" class="cta-button" >click here</a>
+            </div>
+        </div>
+
+        <!-- Add more project cards as needed -->
+
+    </section>
+    <section class="hero">
+        <p>Explore, collaborate, and innovate with STEM projects.</p>
+        <a href="home.html" class="cta-button">Get Started</a>
+    </section>
+    <footer>
+        <p>&copy; 2023 My Basic Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
