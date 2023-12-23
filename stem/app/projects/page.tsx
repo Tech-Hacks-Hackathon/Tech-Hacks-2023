@@ -31,6 +31,7 @@ const Principal = () => {
 
   return (
     <main>
+      <Header handleClick={handleClick} />
       <div className="flex transition-all">
         {/* Sidebar nav */}
 
