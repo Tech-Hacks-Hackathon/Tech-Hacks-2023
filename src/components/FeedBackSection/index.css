@@ -1,0 +1,23 @@
+.back-button {
+  color: white;
+  border-radius: 7px;
+  border-width: 0px;
+  height: 27px;
+  width: 72px;
+  background-color: black;
+}
+.backButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img {
+  height: 10px;
+  width: 10px;
+}

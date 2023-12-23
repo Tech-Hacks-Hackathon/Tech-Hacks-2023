@@ -1,0 +1,33 @@
+.projectCardItem {
+  background-color: #f8f8ff;
+  border: 2px solid #0f172a;
+  margin-bottom: 15px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+}
+.rightHandContainer {
+  display: flex;
+  flex-direction: row;
+}
+.technologyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button {
+  color: white;
+  border-radius: 7px;
+  border-width: 0px;
+  height: 27px;
+  border: 2px solid green;
+  width: 72px;
+  background-color: darkblue;
+  margin-top: 12px;
+}
+.technology {
+  color: #e73959;
+}
+.rightButton {
+  height: 50px;
+  width: 50px;
+}

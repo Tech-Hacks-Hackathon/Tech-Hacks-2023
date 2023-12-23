@@ -1,0 +1,21 @@
+.about-us-container {
+  background-image: url("https://res.cloudinary.com/da50tzlgo/image/upload/v1703304634/Screenshot_2023-12-23_094010_llqabq.png");
+  height: 100vh;
+  background-size: cover;
+}
+.heading3 {
+  color: #ffffff;
+  font-size: 42px;
+  text-decoration: underline;
+  font-family: "Roboto";
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  width: 100vh;
+  text-align: center;
+}
+.paragraph {
+  padding: 32px;
+  margin: 10px;
+  color: #ffffff;
+}

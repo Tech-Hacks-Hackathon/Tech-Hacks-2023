@@ -1,0 +1,40 @@
+@keyframes bounceAnimation {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply Animation to Flexbox Items */
+
+.flex-container {
+  display: flex;
+}
+
+.cardItem {
+  animation: bounceAnimation 2s infinite;
+  color: #ffffff;
+  font-family: "Roboto";
+  background-color: #0f172a;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
