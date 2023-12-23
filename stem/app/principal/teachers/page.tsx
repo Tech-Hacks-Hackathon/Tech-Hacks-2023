@@ -1,25 +1,33 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 
 const Principal = () => {
   const [open, setOpen] = useState(false);
-  const students = ["Abhiram", "Indra", "Dinesh", "Gowtham"];
-  const [searchCourses, setSearchCourses] = useState(students);
+  const [teachers, setTeachers] = useState([]);
+  const [searchTeachers, setSearchTeachers] = useState([]);
+
+  const getData = async () => {
+    const res = await fetch("/api/teachers");
+    console.log(res);
+    const resJson = await res.json();
+    console.log(resJson.names);
+    setTeachers(resJson.names);
+    setSearchTeachers(resJson.names);
+  };
 
   const handleChange = (e: any) => {
     let newList = [];
-    console.log(e.target.value);
     if (e.target.value === "") {
-      newList = students;
+      newList = teachers;
     } else {
-      newList = students.filter((name: string) =>
+      newList = teachers.filter((name: string) =>
         name.includes(e.target.value)
       );
     }
-    setSearchCourses(newList);
+    setSearchTeachers(newList);
   };
 
   const handleClick = () => {
@@ -27,6 +35,9 @@ const Principal = () => {
   };
 
   //   Have to complete this function
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <main>
@@ -53,7 +64,7 @@ const Principal = () => {
             </Link>
           </div>
           <div className="flex w-full flex-col gap-7 py-10">
-            {searchCourses.map((course: any) => {
+            {searchTeachers.map((course: any) => {
               return (
                 <Link
                   href="#"

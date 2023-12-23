@@ -2,13 +2,15 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import { useRouter } from "next/navigation";
 
 const Principal = () => {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [roll, setRoll] = useState("");
+  const [id, setId] = useState("");
   const [password, setPassword] = useState("");
 
   const handleClick = () => {
@@ -19,16 +21,18 @@ const Principal = () => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    console.log(name, email, roll, password);
+    console.log(name, email, id, password);
 
-    const res = await fetch("api/visit", {
+    const res = await fetch("/api/teachers", {
       method: "POST",
       headers: { "Contact-type": "application/json" },
-      body: JSON.stringify({ name, email, roll, password }),
+      body: JSON.stringify({ name, email, id, password }),
     });
 
     const { msg } = await res.json();
     console.log(msg);
+
+    router.push("/principal/teachers");
   };
 
   return (
@@ -73,8 +77,8 @@ const Principal = () => {
               <h3 className="text-xl font-semibold">ID Number</h3>
 
               <input
-                onChange={(e) => setRoll(e.target.value)}
-                type="email"
+                onChange={(e) => setId(e.target.value)}
+                type="text"
                 id="name"
                 placeholder="Roll Number"
                 className="w-full bg-gray-100 p-2"
@@ -86,7 +90,7 @@ const Principal = () => {
 
               <input
                 onChange={(e) => setPassword(e.target.value)}
-                type="email"
+                type="text"
                 id="name"
                 placeholder="Roll Number"
                 className="w-full bg-gray-100 p-2"

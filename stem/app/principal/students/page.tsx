@@ -1,17 +1,25 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 const Principal = () => {
   const [open, setOpen] = useState(false);
-  const students = ["Abhiram", "Indra", "Dinesh", "Gowtham"];
-  const [searchCourses, setSearchCourses] = useState(students);
+  const [students, setStudents] = useState([]);
+  const [searchStudents, setSearchStudents] = useState(students);
+
+  const getData = async () => {
+    const res = await fetch("/api/students");
+    console.log(res);
+    const resJson = await res.json();
+    console.log(resJson.names);
+    setStudents(resJson.names);
+    setSearchStudents(resJson.names);
+  };
 
   const handleChange = (e: any) => {
     let newList = [];
-    console.log(e.target.value);
     if (e.target.value === "") {
       newList = students;
     } else {
@@ -19,12 +27,16 @@ const Principal = () => {
         name.includes(e.target.value)
       );
     }
-    setSearchCourses(newList);
+    setSearchStudents(newList);
   };
 
   const handleClick = () => {
     setOpen(!open);
   };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <main>
@@ -50,7 +62,7 @@ const Principal = () => {
             </Link>
           </div>
           <div className="flex w-full flex-col gap-7 py-10">
-            {searchCourses.map((course: any) => {
+            {searchStudents.map((course: any) => {
               return (
                 <Link
                   href="#"

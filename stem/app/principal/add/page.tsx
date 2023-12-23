@@ -2,13 +2,16 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import { useRouter } from "next/navigation";
 
 const Principal = () => {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
 
   const [name, setName] = useState("");
-  const [subjectCode, setSubjectCode] = useState("");
+  const [code, setCode] = useState("");
   const [teacher, setTeacher] = useState("");
+  const [teacherId, setTeacherID] = useState("");
 
   const handleClick = () => {
     setOpen(!open);
@@ -18,16 +21,18 @@ const Principal = () => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    console.log(name, subjectCode, teacher);
+    console.log(name, code, teacher);
 
-    const res = await fetch("api/visit", {
+    const res = await fetch("/api/courses", {
       method: "POST",
       headers: { "Contact-type": "application/json" },
-      body: JSON.stringify({ name, subjectCode, teacher }),
+      body: JSON.stringify({ name, teacher, teacherId, code }),
     });
 
     const { msg } = await res.json();
     console.log(msg);
+
+    router.push("/principal");
   };
 
   return (
@@ -61,7 +66,19 @@ const Principal = () => {
 
               <input
                 onChange={(e) => setTeacher(e.target.value)}
-                type="email"
+                type="text"
+                id="name"
+                placeholder="Email"
+                className="w-full bg-gray-100 p-2"
+              />
+            </label>
+
+            <label>
+              <h3 className="text-xl font-semibold">Teacher ID</h3>
+
+              <input
+                onChange={(e) => setTeacherID(e.target.value)}
+                type="text"
                 id="name"
                 placeholder="Email"
                 className="w-full bg-gray-100 p-2"
@@ -72,8 +89,8 @@ const Principal = () => {
               <h3 className="text-xl font-semibold">Subject Code</h3>
 
               <input
-                onChange={(e) => setSubjectCode(e.target.value)}
-                type="email"
+                onChange={(e) => setCode(e.target.value)}
+                type="text"
                 id="name"
                 placeholder="Roll Number"
                 className="w-full bg-gray-100 p-2"

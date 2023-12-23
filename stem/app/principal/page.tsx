@@ -1,28 +1,41 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 
 const Principal = () => {
   const [open, setOpen] = useState(false);
-  const courses = ["course1", "course2", "course3", "abcd"];
-  const [searchCourses, setSearchCourses] = useState(courses);
+  const [courses, setCourses] = useState([]);
+  const [searchCourses, setSearchCourses] = useState([]);
+
+  const getData = async () => {
+    const res = await fetch("/api/courses");
+    console.log(res);
+    const resJson = await res.json();
+    console.log(resJson.names);
+    setCourses(resJson.names);
+    setSearchCourses(resJson.names);
+  };
 
   const handleChange = (e: any) => {
     let newList = [];
-    console.log(e.target.value);
     if (e.target.value === "") {
       newList = courses;
     } else {
       newList = courses.filter((name: string) => name.includes(e.target.value));
     }
     setSearchCourses(newList);
+    newList = [];
   };
 
   const handleClick = () => {
     setOpen(!open);
   };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <main>
