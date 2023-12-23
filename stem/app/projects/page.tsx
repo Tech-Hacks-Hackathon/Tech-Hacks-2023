@@ -5,6 +5,7 @@ import React, { useState } from "react";
 // import { UserButton, useUser } from "@clerk/nextjs";
 
 import Link from "next/link";
+import Header from "@/components/Header";
 
 const Principal = () => {
   // const { isSignedIn } = useUser();
@@ -16,6 +17,10 @@ const Principal = () => {
   const chat: any = [];
 
   const [getChat, setGetChat] = useState(chat);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
 
   const handleMessage = (e: any) => {
     e.preventDefault();
@@ -36,7 +41,7 @@ const Principal = () => {
         {/* Sidebar nav */}
 
         <nav
-          className={`flex h-screen w-[15rem] flex-col gap-5 bg-blue-200 px-10 py-5 text-lg text-sky-500 duration-300 max-md:fixed ${
+          className={`flex h-screen w-[15rem] flex-col gap-5 bg-[#313131] px-10 py-5 text-lg text-white duration-300 max-md:fixed  ${
             open ? "max-md:translate-x-0" : "max-md:translate-x-[-100%]"
           }`}
         >
