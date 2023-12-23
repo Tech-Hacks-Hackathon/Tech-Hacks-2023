@@ -1,0 +1,36 @@
+body{
+    background-color: #F1EBD4;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+    perspective: 1000px;
+    
+}
+#dot1{
+    transform: preserve-3d;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 210px auto 0;
+}
+.newbox{
+    transform: preserve-3d;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: rgb(39, 38, 38);
+    position: absolute;    
+    transition: transform 3000ms ease-in;
+}
+.anodiv{
+    transform: preserve-3d;
+    width: 1.5px;
+    height: 1.5px;
+    border-radius: 50%;
+    background-color: rgb(39, 38, 38);
+    position: absolute;
+    transition: transform 3000ms ease-in;
+}

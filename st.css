@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    border-bottom: 1px solid;
+    background-color: #EB7070;
+    height: 120px;
+}
+.logo{
+    height: 150px;
+    width: 220px;
+    margin-top: -20px;
+}
+.bigbox{
+    margin-left: 280px;
+    border: 1px solid;
+    width: 900px;
+}
+.row-2{
+    display: flex;
+    gap: 15px;
+}
+#month{
+    width: 210px;
+    height: 35px;
+    border: 1.5px solid;
+    border-radius: 3px;
+    font-size: large;
+}
+#day{
+    width: 210px;
+    height: 35px;
+    border: 1.5px solid;
+    border-radius: 3px;
+    font-size: large;
+}
+#country{
+    width: 300px;
+    height: 35px;
+    border: 1.5px solid;
+    border-radius: 3px;
+    font-size: large;
+}
+label{
+font-size: large;
+font-weight: 500;
+font-family: 'Hind', sans-serif;
+font-family: 'Rubik', sans-serif;
+letter-spacing: 0.4px;
+color: grey;
+
+}
+
+.family{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.sub{
+    font-size: large;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    border-top: 1.5px solid;
+    border-left: 1.5px solid;
+    border-right: 1.5px solid;
+    border-bottom: 1.5px solid;
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.inpu{
+    width: 210px;
+    height: 35px;
+    font-size: 18px;
+    border: 1.5px solid;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+.inpu-c{
+    width: 280px;
+    height: 35px;
+    font-size: 18px;
+    border: 1.5px solid;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+.box-9{
+    display: flex;
+    gap: 40px;
+}
+.inpu-s{
+    width: 610px;
+    height: 35px;
+    font-size: 18px;
+    border: 1.5px solid;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+.inpu-p{
+    width: 210px;
+    height: 35px;
+    font-size: 18px;
+    border: 1.5px solid;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+.inpu-e{
+    width: 160px;
+    height: 35px;
+    font-size: 18px;
+    border: 1.5px solid;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+.next{
+    width: 120px;
+    height: 60px;
+    font-size: x-large;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 191, 255);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+.nex{
+    margin-left: 490px;
+    padding-bottom: 30px;
+
+}
+.inpu-r{
+    width: 245px;
+    height: 35px;
+    font-size: 18px;
+    border: 1.5px solid;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+.row-12{
+    display: flex;
+    gap: 199px;
+}
+
+.place{
+    width: 52px;
+    height: 35px;
+    border: 1.5px solid;
+    font-size: 12px;
+    border-radius: 3px;
+    
+}
+.inp{
+    display: flex;
+    gap: 200px;
+}
+.box-1{
+    display: flex;
+    gap: 15px;
+}
+
+.input{
+    width: 280px;
+    height: 29px;
+    font-size: large;
+    border: 1.5px solid;
+    border-radius: 3px;
+}
+.box-2{
+    display: flex;
+    gap: 15px;
+}
+.pwd{
+    display: flex;
+    gap: 15px;
+}
+.head-1{
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 0.8px;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 0px 0px 2px 5px;
+}
+.f-box{
+    display: flex;
+    gap: 15px;
+}
+.m-box{
+    display: flex;
+    gap: 15px;
+}
+#name{
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.5px;
+}
+#subclass{
+    padding: 0px 10px 40px 5px;
+}
+.rad{
+    display: flex;
+    gap: 20px;
+    width: 190px;
+}
+.select{
+    margin-left: 79px;
+}
+.row-5{
+    display: flex;
+    gap: 235px;
+}
+.phone{
+    display: flex;
+    gap: 10px;
+}
+.row-6{
+    display: flex;
+    gap: 178px;
+}
+.inp{
+    display: flex;
+}
+.row-7{
+    display: flex;
+    gap:90px;
+}
+.gmail{
+    padding-top: 8px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: blur(5px);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+}
+.box{
+    background-color: white;
+    max-width: 100%;
+    margin-top: 35px;
+    border: 2px solid whitesmoke;
+    padding: 20px 20px;
+}
+.head-1{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#books{
+    width: 60px;
+    height: 60px;
+    position: relative;
+
+}
+#cancel{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 380px;
+
+}
+#bookworm{
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Martel', serif;
+    letter-spacing: 0.8px;
+}
+.active{
+    color: black;
+}
+
+.f-name,.l-name,.email,.password,.select{
+padding-bottom: 10px;
+}
+#input1,#input2,#input3,#input4{
+    height: 35px;
+    width: 350px;
+    max-width: 100%;
+    padding: 8px 8px 8px 8px;
+    font-size: 1em;
+    border: 2px solid grey;
+    border-radius: 3px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Martel', serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+.sub-select{
+    height: 50px;
+    width: 375px;
+    padding: 8px 8px 8px 20px;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Martel', serif;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+.gender{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 30px;
+}
+#gender-1,#gender-2{
+    max-width: 100%;
+    height: 50px;
+    width: 175px;
+    padding: 8px 10px;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Martel', serif;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    color: grey;
+}
+.check-box{
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+#check{
+    height: 25px;
+    width: 28px;
+    margin-left: 20px;
+}
+#para-1{
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Martel', serif;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 20px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#para-2{
+    max-width: 100%;
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Martel', serif;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 25px;
+    color: grey;
+    width: 410px;
+}
+.button{
+    padding: 25px 25px;
+}
+#submit{
+    max-width: 100%;
+    height: 50px;
+    width: 370px;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Martel', serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    color: white;
+    background-color: purple;
+    border: none;
+    border-radius: 6px;
+
+}
+.last-head{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+#head{
+    font-size: 18px;
+}
+@media (0px<=width<=650px)  {
+   
+    #cancel{
+        margin-left: 300px;
+    }
+    #gender-1,#gender-2{
+        width: 125px;
+    }
+    .gender{
+        margin-left: 15px;
+        gap: 5px;
+    }
+    .box{
+        max-width: 80%;
+        margin-top: 10px;
+    }
+    .head-3{
+        max-width: 100%;
+        padding-right: 14px;
+    }
+    .sub-select{
+        max-width: 106%;
+    }
+}
