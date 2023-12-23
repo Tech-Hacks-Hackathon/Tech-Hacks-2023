@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Science Page</title>
+	<style>
+		.background-image {
+            background-image: url('https://wallpaperset.com/w/full/2/1/d/477968.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+
+		li ul {
+			display: none;
+		}
+
+		li:hover > ul {
+			display: block;
+		}
+
+		h1{
+			color:aliceblue;
+		}
+		.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #04AA6D;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color:rgb(233, 122, 58);}
+.button4 {background-color:rgb(136, 171, 211);}
+
+</style>
+
+	</style>
+</head>
+<body>
+	<div class="background-image">
+	<h1>Science</h1>
+	<ul>
+		<li>
+			<button class="button button1">Biology</button>
+			<ul>
+				<li><button class="button button2" >Cell Biology</button></li>
+				<li><button class="button button2">Genetics</button></li>
+				<li><button class="button button2">Ecology</button></li>
+			</ul>
+		</li>
+		<li>
+			<button class="button button1">Chemistry</button>
+			<ul>
+				<li><button class="button button2">Organic Chemistry</button></li>
+				<li><button class="button button2">Inorganic Chemistry</button></li>
+				<li><button class="button button2">Physical Chemistry</button></li>
+			</ul>
+		</li>
+		<li>
+			<button class="button button1">Physics</button>
+			<ul>
+				<li><button class="button button2">Mechanics</button></li>
+				<li><button class="button button2">Thermodynamics</button></li>
+				<li><button class="button button2">Electromagnetism</button></li>
+			</ul>
+		</li>
+		<li>
+			<button class="button button1">Astronomy</button>
+			<ul>
+				<li><button class="button button2">Planetary Science</button></li>
+				<li><button class="button button2">Stellar Astronomy</button></li>
+				<li><button class="button button2">Cosmology</button></li>
+			</ul>
+		</li>
+	</ul>
+    <br>
+    <br>
+	<form action="https://www.sciencebuddies.org/science-fair-projects/science-projects" >
+	<button class="button button3">VIEW PROJECTS</button>
+	</form>
+	<form action ="feed.html">
+		<button class="button button4">FEED BACK</button>
+	</form>
+</div>
+	
+</body>
+</html>

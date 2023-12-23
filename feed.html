@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Page</title>
+	<style>
+		body {
+		  background-color:antiquewhite ;
+		}
+		h1 {
+		  text-align: center;
+		  margin-top: 50px;
+		}
+		.button-container {
+		  display: flex;
+		  justify-content: center;
+		  margin-top: 50px;
+		}
+		.button {
+		  margin: 0 10px;
+		  padding: 10px 20px;
+		  border: none;
+		  border-radius: 5px;
+		  font-size: 16px;
+		  font-weight: bold;
+		  color: white;
+		  background-color: #4CAF50;
+		  cursor: pointer;
+		}
+		.button:hover {
+		  background-color: #3e8e41;
+		}
+	  </style>
+</head>
+<body>
+	<h1>Feedback Page</h1>
+	<form action="thank.html">
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="feedback">Feedback:</label><br>
+		<textarea id="feedback" name="feedback"></textarea><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
