@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You Page</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            color: white;
+            font-size: 72px;
+            text-align: center;
+            margin-top: 180px;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h2 {
+            color: white;
+            font-size: 52px;
+            text-align: center;
+            margin-top: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .heart {
+            color: red;
+            font-size: 72px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 1s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <div class="heart">❤️</div>
+    <script>
+        const heart = document.querySelector('.heart');
+        heart.addEventListener('click', () => {
+            heart.style.animation = 'none';
+            heart.offsetHeight;
+            heart.style.animation = null;
+        });
+    </script>
+    <h2>for your feedback</h2>
+</body>
+</html>

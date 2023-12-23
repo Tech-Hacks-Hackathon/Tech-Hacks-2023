@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+
+   .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.background-image {
+            background-image: url('https://wallpaperaccess.com/full/31192.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+
+.button1 {background-color: #04AA6D;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #dashboard-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            opacity: 0.8;
+        }
+ 
+p.thick {
+  font-weight: bold;
+}
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+    </style>
+</head>
+<body>
+  <div class="background-image">
+     <div id="dashboard-container">
+        <h1>Welcome to the Dashboard!</h1>
+        <p class="thick">Your username: <span id="display-username"></span></p>
+        <p class="thick">Your password: <span id="display-password"></span></p>
+    </div>
+
+    <script>
+        // Check if localStorage is supported
+        if (typeof(Storage) !== "undefined") {
+            // Retrieve data from localStorage
+            var username = localStorage.getItem('username');
+            var password = localStorage.getItem('password');
+
+            // Display data on the page
+            document.getElementById('display-username').textContent = username;
+            document.getElementById('display-password').textContent = password;
+        } else {
+            alert('Sorry, your browser does not support localStorage.');
+        }
+    </script>
+<form action="page3.html">
+    <button class="button button1">CONTINUE</button>
+</form>
+</div>
+</body>
+</html>
