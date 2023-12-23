@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="roomCodeForm">
+        <h2>Create or Join a Room</h2>
+
+        <label for="roomCode">Enter Room Code:</label>
+        <input type="text" id="roomCode" name="roomCode" required>
+
+        <button type="button" onclick="joinRoom()">Join Room</button>
+        <button type="button" onclick="generateRoomCode()">Generate Room Code</button>
+    </form>
+    <p>
+        A unique feature of the platform is the ability for users with stable internet connections to create a room code.
+         This room code serves as a mechanism for other users interested in the same course to join seamlessly. 
+         It fosters a sense of community and collaboration among learners.
+    </p>
+    <script>
+        function joinRoom() {
+            var roomCode = document.getElementById('roomCode').value;
+            // Implement logic to join the room with the given code (server-side).
+            alert('Joining room: ' + roomCode);
+        }
+
+        function generateRoomCode() {
+            // Implement logic to generate a new room code (server-side).
+            // For this example, let's assume a random 6-character alphanumeric code.
+            var randomCode = Math.random().toString(36).substr(2, 6).toUpperCase();
+            alert('Generated Room Code: ' + randomCode);
+        }
+    </script>
+
+</body>
+</html>
