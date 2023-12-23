@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f7;
+            font-family: Arial, sans-serif;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+        }
+
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #4CAF50;
+            border-radius: 10px;
+        }
+
+        #feedback-form {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #271414;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: white;
+            box-sizing: border-box;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        #submit-button {
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="feedback-form">
+        <h2>Feedback Form</h2>
+        <p>Feel free to share your feedback with us.</p>
+        
+        <form action="submit_feedback.php" method="post">
+            <label for="feedback-text">Feedback:</label>
+            <textarea id="feedback-text" name="feedback" rows="4" placeholder="Enter your feedback here..." required></textarea>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

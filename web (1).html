@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles(1).css" id="main-stylesheet">
+    <title>Web Develope</title>
+</head>
+<body>
+        
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Web Development</h1>
+        <p>Web development is closely related to the job of designing the features and functionality of websites and apps (often called “web design”), but the “web development” term is usually reserved for the actual construction and programming of websites and apps.
+
+            Think of all the web pages you have used over the years - Web Developers built those sites, making sure they functioned properly and performed in ways that allowed for a great user experience. Web Developers do this by writing lines of code, using a variety of programming languages, which vary depending on the tasks they are performing and the platforms they are working on..</p>
+            <p>Kindly select the language</p>
+            <label>
+                <input type="checkbox" id="myCheckbox"> SpeechToText
+              </label>           <br> 
+        <a href="https://www.youtube.com/watch?v=M93Uf1bMq-o&t=1s" class="cta-button">videos(Tel)</a><br><br>
+        <a href="" class="cta-button">Download(Tel)</a><br><br>
+        <a href="https://www.youtube.com/watch?v=xGmIl7QbBiA" class="cta-button">videos(Eng)</a><br><br>
+        <a href="" class="cta-button">Download(Eng)</a>
+    </section>
+    <script>
+        const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+        const mainStylesheet = document.getElementById('main-stylesheet');
+        const darkThemeStylesheet = document.getElementById('dark-theme-stylesheet');
+
+        themeToggleCheckbox.addEventListener('change', () => {
+            if (themeToggleCheckbox.checked) {
+                darkThemeStylesheet.removeAttribute('disabled');
+                mainStylesheet.setAttribute('disabled', true);
+            } else {
+                mainStylesheet.removeAttribute('disabled');
+                darkThemeStylesheet.setAttribute('disabled', true);
+            }
+        });
+    </script>
+</body>
+</html>
