@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles(1).css" id="main-stylesheet">
+    <title>Web Develope</title>
+</head>
+<body>
+        
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Graphic Design</h1>
+        <p>Graphic design is the craft of planning and creating visual content to communicate ideas and messages. Graphic design is everywhere you look in the digital age — from billboards to cereal boxes to mobile apps. Through incorporating different elements and principles, these designs can influence our perception and emotions.
+
+            Graphic design is also known as communication design, and Graphic Designers are essentially visual communicators. They bring visual concepts to life, most commonly through graphic design software, and inform or engage consumers through text, graphics and images.
+            
+            Graphic design is one way that companies connect with consumers. Design can be used to promote and sell products, to convey a message, or to develop a brand identity. Though some graphic design has a commercial purpose, Graphic Designers combine art and business, so the creative process is informed in part by business goals.</p>
+           <p>For more details...Look at the videos</p>
+            <p>Kindly select the language</p>
+        <a href="" class="cta-button">videos(Tel)</a><br><br>
+        <a href="" class="cta-button">Download(Tel)</a><br><br>
+        <a href="" class="cta-button">videos(Eng)</a><br><br>
+        <a href="" class="cta-button">Download(Eng)</a>
+    </section>
+    <script>
+        const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+        const mainStylesheet = document.getElementById('main-stylesheet');
+        const darkThemeStylesheet = document.getElementById('dark-theme-stylesheet');
+
+        themeToggleCheckbox.addEventListener('change', () => {
+            if (themeToggleCheckbox.checked) {
+                darkThemeStylesheet.removeAttribute('disabled');
+                mainStylesheet.setAttribute('disabled', true);
+            } else {
+                mainStylesheet.removeAttribute('disabled');
+                darkThemeStylesheet.setAttribute('disabled', true);
+            }
+        });
+    </script>
+</body>
+</html>

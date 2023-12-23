@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles(1).css" id="main-stylesheet">
+    <title>Web Develope</title>
+</head>
+<body>
+        
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Graphic Design</h1>
+        <p>Digital marketing is a comprehensive approach to promoting products, services, or brands through digital channels and technologies. This form of marketing leverages the vast scope of the internet and electronic devices to engage with target audiences in a personalized and measurable manner. The core elements of digital marketing encompass a variety of online strategies and platforms. Search Engine Optimization (SEO) involves optimizing website content for higher search engine rankings, while Search Engine Marketing (SEM) includes paid advertising on search engines. Social Media Marketing (SMM) utilizes platforms like Facebook and Instagram to enhance brand visibility and interact with audiences. Content Marketing focuses on creating and disseminating valuable content, and Email Marketing involves targeted messages to subscribers. Other strategies include Affiliate Marketing, Influencer Marketing, and Online Public Relations. With its ability to precisely target audiences, measure campaign effectiveness, and adapt strategies in real-time, digital marketing has become an integral part of modern business strategies. Staying abreast of evolving trends and technologies is crucial for marketers to ensure the continued success of their campaigns in this dynamic digital landscape.
+
+            Digital marketing provides several advantages, including the ability to target specific audiences, track and measure campaign performance, adjust strategies in real-time, and reach a global audience. The dynamic nature of the digital landscape requires marketers to stay updated on the latest trends and technologies to remain effective in their campaigns.</p>
+           <p>For more details...Look at the videos</p>
+            <p>Kindly select the language</p>
+            <label>
+                <input type="checkbox" id="myCheckbox"> SpeechToText
+              </label>   <br>
+        <a href="https://www.youtube.com/watch?v=wWosrNn73mQ" class="cta-button">videos(Tel)</a>
+        <a href="https://www.youtube.com/watch?v=bixR-KIJKYM" class="cta-button">videos(Eng)</a><br><br>
+        <a href="" class="cta-button">Download(Tel)</a>
+        <a href="" class="cta-button">Download(Eng)</a>
+    </section>
+    <script>
+        const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+        const mainStylesheet = document.getElementById('main-stylesheet');
+        const darkThemeStylesheet = document.getElementById('dark-theme-stylesheet');
+
+        themeToggleCheckbox.addEventListener('change', () => {
+            if (themeToggleCheckbox.checked) {
+                darkThemeStylesheet.removeAttribute('disabled');
+                mainStylesheet.setAttribute('disabled', true);
+            } else {
+                mainStylesheet.removeAttribute('disabled');
+                darkThemeStylesheet.setAttribute('disabled', true);
+            }
+        });
+    </script>
+</body>
+</html>
