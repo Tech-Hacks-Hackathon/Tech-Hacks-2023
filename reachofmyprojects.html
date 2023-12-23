@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <!-- Add your existing head elements... -->
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Your existing HTML content... -->
+
+    <!-- Chart Section -->
+    <div style="text-align: center; margin-top: 30px;">
+        <h1>Number of Views for Each Project</h1>
+        <canvas id="viewsChart" width="800" height="400"></canvas>
+    </div>
+
+    <script>
+        // Sample data for the number of views for each project
+        var viewsData = [100, 150, 180, 250, 220, 300, 350, 280, 200, 220, 180, 150];
+
+        var ctxViews = document.getElementById('viewsChart').getContext('2d');
+        var viewsChart = new Chart(ctxViews, {
+            type: 'bar',
+            data: {
+                labels: [
+                    'Project 1', 'Project 2', 'Project 3', 'Project 4', 'Project 5', 'Project 6',
+                    'Project 7', 'Project 8', 'Project 9', 'Project 10', 'Project 11', 'Project 12'
+                ],
+                datasets: [{
+                    label: 'Number of Views',
+                    data: viewsData,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        stepSize: 50 // Adjust the step size according to your data
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
