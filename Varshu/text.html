@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Experts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #experts-section {
+            max-width: 800px;
+            margin: 20px;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .expert-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .expert-card:hover {
+            transform: scale(1.05);
+        }
+
+        .expert-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .expert-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .expert-title {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .expert-bio {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="experts-section">
+        <h2>Meet Our STEM Experts</h2>
+
+        <div class="expert-card">
+            <img src="expert1-avatar.jpg" alt="Expert 1" class="expert-avatar">
+            <div class="expert-details">
+                <div class="expert-name">Dr. Jane Smith</div>
+                <div class="expert-title">Ph.D. in Computer Science</div>
+                <div class="expert-bio">
+                    Dr. Smith is a leading expert in computer science with a focus on artificial intelligence and machine learning.
+                    She has published numerous research papers and actively mentors students in STEM-related projects.
+                </div>
+            </div>
+        </div>
+
+        <div class="expert-card">
+            <img src="expert2-avatar.jpg" alt="Expert 2" class="expert-avatar">
+            <div class="expert-details">
+                <div class="expert-name">Prof. John Doe</div>
+                <div class="expert-title">Professor of Electrical Engineering</div>
+                <div class="expert-bio">
+                    Professor Doe has extensive experience in electrical engineering and has contributed to various research projects
+                    in the field. He is passionate about fostering innovation and guiding students in their STEM endeavors.
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more expert cards as needed -->
+    </div>
+
+</body>
+</html>
