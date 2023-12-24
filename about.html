@@ -301,39 +301,76 @@ body.dark {
       margin-right: 15px;
       color: var(--grey-color);
     }
-    header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+    #block {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    border-left: 2px solid #333; /* Border on the left side */
+    border-right: 2px solid #333; /* Border on the right side */
+    width: 1000px;
+    height: 560px;
+    margin-top: 100px;
+    margin-left: 300px;
+}
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
 
-        h2 {
-            color: #333;
-        }
+header h1 {
+    font-size: 2em;
+}
 
-        p {
-            line-height: 1.6;
-        }
+section {
+    margin: 30px 0;
+    padding: 20px; /* Add padding for better spacing */
+    border-bottom: 2px solid #333; /* Border between sections */
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+section h2 {
+    color: #3498db;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #333; /* Border on the top side */
+}
+
+/* Add some spacing and styling to the contact information */
+section h2 + p {
+    margin-top: 10px;
+}
+
+section p:nth-of-type(2),
+section p:nth-of-type(3) {
+    margin-bottom: 5px;
+}
+
+/* Style the links in the footer */
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Hover effect for the links in the footer */
+footer a:hover {
+    color: #3498db;
+}
+
+
     </style>
   </head>
   <body>
@@ -441,7 +478,7 @@ body.dark {
             <!-- End -->
             
             <li class="item">
-              <a href="profile.html" class="nav_link">
+              <a href="#" class="nav_link">
                 <span class="navlink_icon">
                   <i class="bx bx-user"></i>
                 </span>
@@ -471,7 +508,8 @@ body.dark {
         </div>
       </div>
     </nav>
-    <header>
+    <div class="block" id="block">
+      <header>
         <h1>About Us Page</h1>
     </header>
 
@@ -492,6 +530,7 @@ body.dark {
     <footer>
         &copy; 2023 Your Company. All rights reserved.
     </footer>
+    </div>
     <!-- JavaScript -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
