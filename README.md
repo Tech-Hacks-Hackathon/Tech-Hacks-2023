@@ -15,13 +15,10 @@
 
 <h4>App Interface :</h4>
 <div>
-  <img src=https://github.com/nabro356/Tech-Hacks-2023-EDITH/assets/112922661/335b949c-65f4-4252-ad93-0396830e30c3 width="100">
-  <br>
-  <img src=https://github.com/nabro356/Tech-Hacks-2023-EDITH/assets/112922661/a87e0f4a-f45b-447b-ab44-0152c38adb2d width="100">
-  <br>
-  <img src=https://github.com/nabro356/Tech-Hacks-2023-EDITH/assets/112922661/7fc62873-af22-4290-b99e-febb156a3a22 width="100">
-  <br>
-  <img src=https://github.com/nabro356/Tech-Hacks-2023-EDITH/assets/112922661/a9569db9-89b0-4ba8-86bf-5717f7560547 width="100">
+  <img src=https://github.com/nabro356/Tech-Hacks-2023-EDITH/assets/112922661/335b949c-65f4-4252-ad93-0396830e30c3 width="150">
+  <img src=https://github.com/nabro356/Tech-Hacks-2023-EDITH/assets/112922661/a87e0f4a-f45b-447b-ab44-0152c38adb2d width="150">
+  <img src=https://github.com/nabro356/Tech-Hacks-2023-EDITH/assets/112922661/7fc62873-af22-4290-b99e-febb156a3a22 width="150">
+  <img src=https://github.com/nabro356/Tech-Hacks-2023-EDITH/assets/112922661/a9569db9-89b0-4ba8-86bf-5717f7560547 width="150">
 </div>
 
 
