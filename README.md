@@ -1,11 +1,5 @@
 #22-12-23
-<style>
-.container {
-  float: left;
-  width: 25%;
-  padding: 5px;
-}
-</style>
+
 
 # Tech-Hacks-2023
 <p>This repository is a submission to Tech-Hacks-2023 </p>
